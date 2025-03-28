@@ -3,7 +3,24 @@ box-sizing: border-box;
 padding: 0;
 margin: 0;
 }
+.bodymovie{
+    background-color: black;
+    display: flex;
 
+}
+
+.cars222{
+
+
+}
+.infomovie{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-left: ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
 /* Selector de Calses */
 
 .body{
