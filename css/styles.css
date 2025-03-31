@@ -9,6 +9,7 @@ margin: 0;
 .body{
     background-color: rgba(177, 0, 0, 1);
 }
+
 .header{
    display:flex;
    background-color: black;
@@ -23,8 +24,8 @@ margin: 0;
 }
 
 nav ul{
-    color: rgba(177, 0, 0, 1);
     list-style: none;
+    color: rgba(177, 0, 0, 1);
     font-weight: bolder;
     font-size: 20px;
 }
@@ -33,14 +34,20 @@ ul{
     display:flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: 40px;
 }
 
 li{
-    margin-left: 40px;
+    padding-left: 40px;
     font-family:'Times New Roman', Times, serif;
-    font-weight: bolder;
+    text-decoration: none;
+    color: rgba(177, 0, 0, 1);
 }
 
+li a{
+   text-decoration: none;
+   color: rgba(177, 0, 0, 1);
+}
 
 .footer{
     display: flex;
@@ -49,6 +56,44 @@ li{
     background-color: black;
     padding: 20px;
 }
+
+register y log 
+
+.for{
+    margin: 10px;
+    
+}
+
+detailsmovie
+
+.bodymovie{
+    background-color: black;
+    display: flex;
+
+}
+
+.cars222{
+
+
+}
+.infomovie{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-left: ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.disneymovies{
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 250px;
+width: 200px;
+flex-wrap: nowrap;
+}
+
 
 
 /* Selector de Etiquetas */
