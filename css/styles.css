@@ -39,7 +39,7 @@ ul{
 
 li{
     padding-left: 40px;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
     text-decoration: none;
     color: rgba(177, 0, 0, 1);
 }
@@ -81,7 +81,7 @@ detailsmovie
     list-style-type: none;
     justify-content: space-between;
     margin-left: ;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
     font-weight: bolder;
 }
 
@@ -89,15 +89,43 @@ detailsmovie
 display: flex;
 justify-content: space-around;
 align-items: center;
-height: 250px;
-width: 200px;
 flex-wrap: nowrap;
+}
+
+.netflix-movies{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: nowrap;
+}
+
+.netflix-series{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: nowrap;
+}
+
+.section-container{
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+.h2-ds{
+margin-bottom: 20px;
+font-family:'Courier New', Courier, monospace;
+font-weight: bolder;
+}
+
+.card img{
+height: 270px;
+width: 190px;
+border: 5px solid black;
 }
 
 .generos{
 display: flex;
 justify-content: space-around;
-
 }
 
 .generos1{
