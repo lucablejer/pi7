@@ -83,6 +83,27 @@ detailsmovie
     font-weight: bolder;
 }
 
+.disneymovies{
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 250px;
+width: 200px;
+flex-wrap: nowrap;
+}
+
+.generos{
+display: flex;
+justify-content: space-around;
+
+}
+
+.generos1{
+background-color: black;
+font-weight: bolder;
+color: rgba(177, 0, 0, 1);
+}
+
 /* Selector de Etiquetas */
 
 
