@@ -37,6 +37,9 @@ ul{
     align-items: center;
     margin-left: 40px;
 }
+.labl{
+    color: red;
+}
 
 li{
     padding-left: 40px;
@@ -58,8 +61,6 @@ li a{
     padding: 20px;
 }
 
-register y log 
-
 .for{
     margin-top:20px;
     text-decoration: none;
@@ -67,8 +68,6 @@ register y log
     justify-content: center;
 }
     
-detailsmovie
-
 .bodymovie{
     background-color: black;
     display: flex;
@@ -79,7 +78,6 @@ detailsmovie
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    margin-left: ;
     font-family:'Courier New', Courier, monospace;
     font-weight: bolder;
 }
@@ -136,5 +134,3 @@ color: rgba(177, 0, 0, 1);
 /* Selector de Etiquetas */
 
 
-
-/* Selector de ID*/
