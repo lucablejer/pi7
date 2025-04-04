@@ -4,7 +4,7 @@ padding: 0;
 margin: 0;
 }
 
-/* Selector de Calses */
+/* Selector de Clases */
 
 .body{
     background-color: rgba(177, 0, 0, 1);
@@ -21,6 +21,7 @@ margin: 0;
 .logo{
      border-radius: 180;
      width:100px;
+     
 }
 
 nav ul{
@@ -60,10 +61,12 @@ li a{
 register y log 
 
 .for{
-    margin: 10px;
-    
+    margin-top:20px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }
-
+    
 detailsmovie
 
 .bodymovie{
@@ -72,16 +75,12 @@ detailsmovie
 
 }
 
-.cars222{
-
-
-}
 .infomovie{
     display: flex;
     list-style-type: none;
     justify-content: space-between;
     margin-left: ;
-    font-family:'Courier New', Courier, monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
 }
 
