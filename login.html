@@ -38,25 +38,26 @@
 
     <main class="for">
 
-    <form class="loginform" action="index.html" method="get" autocomplete="off"> 
+    <form action="index.html" method="get" autocomplete="off"> 
     
         <h2 class="lgi"> Log In</h2>
 
     
         <div class="lgi">
             <label for="email"> Email:</label> 
-            <input id="email" type="email" name="mail" value="" >
+            <input id="email" type="email" name="mail" value="" required>
         </div>
       
        <di class="lgi">
             <label for="pass" class="hob"> Password: </label>
-            <input  id="pass" type="password" name="user" value="" >
+            <input  id="pass" type="password" name="user" value="" required >
         </di>
         
         <div class="lgi"> 
-            <button type="submit"> Sign In</button>
-            <p><a class="cuen" href="register.html">No account</a></div></p>
+            <button type="submit"> Log In</button>
         </div>
+
+        <div class="lgi"><a class="cuen" href="register.html">No account</a></div>
 
     </form>
 

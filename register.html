@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
 
+<body class="body">
 
     <header class="header">
 
@@ -36,7 +36,34 @@
 
     </header>
 
-    <main>
+    <main class="for">
+
+        <form action="index.html" method="get" autocomplete="off"> 
+    
+            <h2 class="lgi"> Register</h2>
+    
+            <div class="lgi">
+                <label for="email"> Email:</label> 
+                <input id="email" type="email" name="mail" value="" required>
+            </div>
+          
+           <di class="lgi">
+                <label for="pass"> Password: </label>
+                <input  id="pass" type="password" name="user" value="" required >
+            </di>
+            
+            <div class="lgi"> 
+                <label for="ter"> Accept Terms & Conditions </label>
+                <input id="ter" type="checkbox" name="Términos" value="">
+            </div>
+
+            <div class="lgi"> 
+                <button type="submit"> Sign In</button>
+            </div>
+    
+            <div class="lgi"><a class="cuen" href="index.html">Already have an account</a></div>
+    
+        </form>
 
     </main>
 
