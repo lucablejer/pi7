@@ -3,115 +3,53 @@ box-sizing: border-box;
 padding: 0;
 margin: 0;
 }
-.bodymovie{
-    background-color: black;
-}  
-.infomovie{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    color: red;
-}
-ul{
-    list-style: none;
-    display:flex;
-    justify-content: space-around;
-}
-li{
-    margin-left: 40px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bolder;
-}
-
-.cars222{
-    width: 500px;
-}
-.piecars{
-    display: flex;
-    color: red;
-    font-weight: bolder;
-
-}
-
-/* Selector de Calses */
 
 .body{
     background-color: rgba(177, 0, 0, 1);
+    font-family:'Courier New', Courier, monospace;
 }
 
 .header{
-   display:flex;
-   background-color: black;
-   justify-content: space-around;
-   align-items: center;
-   padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
 }
 
 .logo{
-     border-radius: 180;
-     width:100px;
-     
+    width: 100px;
 }
 
-nav ul{
-    list-style: none;
-    color: rgba(177, 0, 0, 1);
-    font-weight: bolder;
+.lii{
+    color: rgba(177, 0, 0, 1); 
+    text-decoration: none;
     font-size: 20px;
 }
 
-ul{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 40px;
-}
-.labl{
-    color: red;
-}
-
-li{
-    padding-left: 40px;
-    font-family:'Courier New', Courier, monospace;
-    text-decoration: none;
-    color: rgba(177, 0, 0, 1);
-}
-
-li a{
-   text-decoration: none;
-   color: rgba(177, 0, 0, 1);
-}
-
 .footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;   
     background-color: black;
     padding: 20px;
+    color:  rgba(177, 0, 0, 1); 
 }
 
 .for{
-    margin-top:20px;
-    text-decoration: none;
+    display: flex;
+    justify-self: center;
     align-items: center;
-    justify-content: center;
-}
-    
-.bodymovie{
     background-color: black;
-    display: flex;
-
+    margin: 50px;
+    height:50vh;
+    width: 30vw;
 }
 
-.infomovie{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bolder;
+.lgi{
+    color:  rgba(177, 0, 0, 1); 
+}
+
+.cuen{
+    text-decoration: none;
+    color: rgba(177, 0, 0, 1);
 }
 
 .disneymovies{
@@ -163,6 +101,41 @@ font-weight: bolder;
 color: rgba(177, 0, 0, 1);
 }
 
-/* Selector de Etiquetas */
+.bodymovie{
+    background-color: black;
+}  
+
+.infomovie{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: red;
+}
+
+ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+}
+
+li{
+    margin-left: 40px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.cars222{
+    width: 200px;
+}
+
+.piecars{
+    display: flex;
+    color: red;
+    font-weight: bolder;
+
+}
 
 
