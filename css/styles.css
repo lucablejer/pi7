@@ -157,14 +157,40 @@ border: 5px solid black;
 .generos{
 display: flex;
 justify-content: space-around;
+margin-bottom: 50px;
+margin-top: 40px;
+font-size: xx-large;
+font-family: 'Courier New', Courier, monospace;
 }
 
 .generos1{
-background-color: black;
 font-weight: bolder;
 color: rgba(177, 0, 0, 1);
 }
 
+.texto-generos{
+text-decoration: none;
+}
+
+.body-generos{
+background-color: black;
+}
+
+.footer-generos{
+padding: 27vh;
+border-top: solid 1px rgba(177, 0, 0, 1);
+}
+
+.header-generos{
+border-bottom: solid 1px rgba(177, 0, 0, 1);
+}
+
+.flg{
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family:'Courier New', Courier, monospace;
+}
 /* Selector de Etiquetas */
 
 
