@@ -4,52 +4,57 @@ padding: 0;
 margin: 0;
 }
 
+/* Body */
+
 .body{
-    background-color: rgba(177, 0, 0, 1);
-    font-family:'Courier New', Courier, monospace;
+background-color: rgba(177, 0, 0, 1);
+font-family:'Courier New', Courier, monospace;
+}
+
+/* Headers & Footers */
+
+.hamburguer{
+width: 50px;
+display: none;
+}
+
+.header{
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 20px;
+background-color: black;
 }
 
 .logo{
-    width: 100px;
+width: 100px;
+}
+
+li{
+margin-left: 40px;
+font-family:'Times New Roman', Times, serif;
+font-weight: bolder;
 }
 
 .lii{
-    color: rgba(177, 0, 0, 1); 
-    text-decoration: none;
-    font-size: 20px;
+color: rgba(177, 0, 0, 1); 
+text-decoration: none;
+font-size: 20px;
 }
 
 .footer{
-    background-color: black;
-    padding: 20px;
-    color:  rgba(177, 0, 0, 1);
+background-color: black;
+padding: 20px;
+color:  rgba(177, 0, 0, 1); 
 }
 
-.for{
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    background-color: black;
-    margin: 40px;
-    height:60vh;
-    width: 30vw;
+ul{
+list-style: none;
+display:flex;
+justify-content: space-around;
 }
 
-.lgi{
-    color:  rgba(177, 0, 0, 1); 
-    padding: 15px;
-}
-
-.cuen{
-    text-decoration: none;
-    color: rgba(177, 0, 0, 1);
-}
-
-.section-containerg{
-    margin-bottom: 50px;
-    margin-top: 40px;
-    
-    }
+/* Index */
 
 .disneymovies{
 display: flex;
@@ -57,14 +62,14 @@ justify-content: space-around;
 align-items: center;
 flex-wrap: nowrap;
 }
-
+    
 .netflix-movies{
 display: flex;
 justify-content: space-around;
 align-items: center;
 flex-wrap: nowrap;
 }
-
+    
 .netflix-series{
 display: flex;
 justify-content: space-around;
@@ -76,14 +81,14 @@ flex-wrap: nowrap;
 margin-bottom: 20px;
 margin-top: 20px;
 }
-
+    
 .h2-ds{
 margin-bottom: 20px;
 font-family:'Courier New', Courier, monospace;
 font-weight: bolder;
 padding-left: 20px;
 }
-
+    
 .card img{
 height: 270px;
 width: 190px;
@@ -97,42 +102,33 @@ font-weight: bolder;
 border: solid 1px black;
 }
 
-.infomovie{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    color: red;
-}
+/* Register & Login */
 
-ul{
-    list-style: none;
-    display:flex;
-    justify-content: space-around;
-}
-
-li{
-    margin-left: 40px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bolder;
-}
-
-/* Headers & Footers */
-
-.header{
+.for{
 display: flex;
-justify-content: space-around;
+justify-self: center;
 align-items: center;
-padding: 20px;
 background-color: black;
+margin: 40px;
+height:60vh;
+width: 30vw;
 }
 
-.footer{
-background-color: black;
-padding: 20px;
+.cuen{
+text-decoration: none;
+color: rgba(177, 0, 0, 1);
+}
+
+.lgi{
 color:  rgba(177, 0, 0, 1); 
+ padding: 15px;
+}
+
+/* Result */
+
+.section-containerg{
+margin-bottom: 50px;
+margin-top: 40px;  
 }
 
 /* Serie Genre */
@@ -145,7 +141,7 @@ border-top: solid 1px rgba(177, 0, 0, 1);
 .generos{
 display: flex;
 justify-content: space-around;
-margin-bottom: 50px;
+margin-bottom: 115px;
 margin-top: 40px;
 font-size: xx-large;
 font-family: 'Courier New', Courier, monospace;
@@ -205,28 +201,37 @@ width: 350px;
 /* Detail Genre */ 
 
 .moviemain{
-    margin-bottom: 15px;
-    margin-top: 10px;
-    text-decoration: none;
+margin-bottom: 15px;
+margin-top: 10px;
+text-decoration: none;
 }
 
 .section-container-genre{
-    padding: 15px;
+padding: 15px;
 }
 
 .disneymovies-genre{
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 20px;
-    
-    }
-
-.a-genre{
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: nowrap;
+padding: 20px;
 }
 
+.a-genre{
+text-decoration: none;
+color: black;
+font-weight: bolder;
+}
+
+/* Media */
+
+@media (max-width: 350px){
+.hamburguer{
+display: block;
+}
+.logo{
+display: none;
+}
+}
