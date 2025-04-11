@@ -161,4 +161,30 @@ width: 200px;
 
 }
 
+/* detailgenre */ 
 
+.moviemain{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.section-container-genre{
+    padding: 15px;
+}
+
+.disneymovies-genre{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px;
+    
+    }
+
+.a-genre{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
