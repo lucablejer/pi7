@@ -92,6 +92,13 @@ width: 190px;
 border: 5px solid black;
 }
 
+.texto-cards{
+font-family: 'Courier New', Courier, monospace;
+color: black;
+font-weight: bolder;
+border: solid 1px black;
+}
+
 .generos{
 display: flex;
 justify-content: space-around;
@@ -103,26 +110,13 @@ font-family: 'Courier New', Courier, monospace;
 
 .generos1{
 font-weight: bolder;
-color: rgba(177, 0, 0, 1);
-}
-
-.body-generos{
-background-color: black;
+color: black;
 }
 
 .texto-generos{
 font-family: 'Courier New', Courier, monospace;
 font-size: xx-large;
 text-decoration: none;
-}
-
-.footer-generos{
-border-top: solid 1px rgba(177, 0, 0, 1);
-color:rgba(177, 0, 0, 1);
-background-color: black;
-padding: 20px;
-font-family: 'Courier New', Courier, monospace;
-margin-top: 28vh;
 }
 
 .div-generos{
