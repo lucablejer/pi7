@@ -30,7 +30,7 @@ margin: 0;
 .footer{
     background-color: black;
     padding: 20px;
-    color:  rgba(177, 0, 0, 1); 
+    color:  rgba(177, 0, 0, 1);
 }
 
 .for{
@@ -38,8 +38,9 @@ margin: 0;
     justify-self: center;
     align-items: center;
     background-color: black;
-    margin: 50px;
-    height:50vh;
+
+    margin: 40px;
+    height:60vh;
     width: 30vw;
 }
 
