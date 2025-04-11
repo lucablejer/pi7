@@ -38,7 +38,6 @@ margin: 0;
     justify-self: center;
     align-items: center;
     background-color: black;
-
     margin: 40px;
     height:60vh;
     width: 30vw;
@@ -53,6 +52,12 @@ margin: 0;
     text-decoration: none;
     color: rgba(177, 0, 0, 1);
 }
+
+.section-containerg{
+    margin-bottom: 50px;
+    margin-top: 40px;
+    
+    }
 
 .disneymovies{
 display: flex;
