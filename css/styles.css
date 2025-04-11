@@ -228,10 +228,79 @@ font-weight: bolder;
 /* Media */
 
 @media (max-width: 350px){
-.hamburguer{
-display: block;
+
+.header{
+    flex-direction: column;
+    align-items:flex-start;
 }
-.logo{
-display: none;
+ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+  }
+
+li{
+margin: 10px;
+  }
+
+.for{
+    flex-direction: column;
+    width: 80%;
+    padding-left: 10px;
+    }
+
+.generos{
+    flex-direction: column;
 }
+.disneymovies{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.netflix-series{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.netflix-movies{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.disneymovies-genre {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.Cars-Section {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+
+  
+.h1-Cars-Detail {
+    padding-left: 0;
+    text-align: center;
+  }
+
+.Cars-Photo{
+    height: auto;
+    width: 80%;
+}
+
+.Cars-Text-Detail{
+    text-align: center;
+    padding: 0;
+}
+
+.BreakingBad-Photo {
+    width: 90%;
+    height: auto;
+  }
+
 }
