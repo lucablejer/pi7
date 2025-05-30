@@ -8,7 +8,7 @@
 </head>
 <body class="body">
     
-    <header class="header">
+      <header class="header">
 
         <a href="index.html">
         <img class="logo" src="../pi7/img/image.png" alt="logo">
@@ -28,12 +28,19 @@
             </ul>
         </nav>
 
-        <form action="searchresult.html" method="get"> 
+        <form action="searchresult.html" method="get" class="search-form"> 
              <input type="text" id="search" name="nav" value="" placeholder="write">
+               <label>
+        
+            <label for="mov"> </label>
+            <input type="radio"  id="mov"  name="type" value="movie" checked> Movies
+            <input type="radio" name="type" value="series"> Series
+    
              <button type="submit">GO</button>
          </form>
 
     </header>
+
 
     <main class="moviemain">
         <h1 class="h2-ds">Comedy</h1>

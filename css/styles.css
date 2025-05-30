@@ -54,6 +54,33 @@ display:flex;
 justify-content: space-around;
 }
 
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color:  rgba(177, 0, 0, 1);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.search-form input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+.search-form button {
+    padding: 10px 15px;
+    background-color: rgba(177, 0, 0, 1);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.search-form label {
+    color: black;
+    font-size: 14px;
+}
+
 /* Index */
 
 .disneymovies{
@@ -302,5 +329,7 @@ margin: 10px;
     width: 90%;
     height: auto;
   }
+
+
 
 }
