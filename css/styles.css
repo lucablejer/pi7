@@ -83,31 +83,35 @@ justify-content: space-around;
 
 /* Index */
 
-.disneymovies{
-display: flex;
-justify-content: space-around;
-align-items: center;
-flex-wrap: nowrap;
+.mainindex{
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-    
-.netflix-movies{
+
+.section-container{
 display: flex;
-justify-content: space-around;
-align-items: center;
-flex-wrap: nowrap;
-}
-    
-.netflix-series{
-display: flex;
+padding: 10px;
+gap: 10px;
 justify-content: space-around;
 align-items: center;
 flex-wrap: nowrap;
 }
 
-.section-container{
-margin-bottom: 20px;
-margin-top: 20px;
+.section-container a {
+  color: black;
+  text-decoration: none;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 15px;
+
 }
+
+.section-container img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
     
 .h2-ds{
 margin-bottom: 20px;
@@ -129,6 +133,17 @@ font-weight: bolder;
 border: solid 1px black;
 }
 
+.movis{
+   width: 200px;
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 5px;
+   
+}
 /* Register & Login */
 
 .for{
