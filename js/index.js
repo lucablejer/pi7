@@ -4,7 +4,7 @@ let movies = document.querySelector('.movies');
 let series = document.querySelector('.series');
 let newsmo = document.querySelector('.news');
 
-// cambiar los textos de la pagina principal de peliculas populares//
+// cambiar los textos de top rated movies  
 
 const options1 = {
   method: 'GET',
@@ -13,8 +13,9 @@ const options1 = {
     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YWY5ZTY4ZjAwZDk2YjMwNmNjMGFiMmU1MmNlYWY5YyIsIm5iZiI6MTc0ODQzNjE2My41NjE5OTk4LCJzdWIiOiI2ODM3MDRjM2U4YmJkN2MwZDZlYjQwYTAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.549fvUnBzos7VJDClsuRSkuZ_HeiJEQuucUegBVJJTk'
   }
 };
+fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options1) // 
 
-fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options1)
+fetch ('https://api.themoviedb.org/3/movie/top_rated?api_key=b04e301645ef571f2efbccb360411716')
 
 .then (function (response) {
     return response.json(); 
@@ -39,7 +40,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', opti
 })
 
 
-// cambiar los textos de la pagina principal de series populares//
+// cambiar los textos de popular series //
 
 const options2 = {
   method: 'GET',
@@ -74,7 +75,7 @@ fetch('https://api.themoviedb.org/3/tv/popular?language=en-US&page=1', options2)
 })
 
 
-// cambiar los textos de la pagina principal de lo nuevo de peliculas//
+// cambiar los textos de la pagina principal upcoming movies//
 const options3 = {
   method: 'GET',
   headers: {
