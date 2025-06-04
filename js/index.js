@@ -1,10 +1,10 @@
-// atrapar a las selectores//
+// Atrapar a los selectores //
 
 let movies = document.querySelector('.movies');
 let series = document.querySelector('.series');
 let newsmo = document.querySelector('.news');
 
-// cambiar los textos de la pagina principal de peliculas populares//
+// Cambiar los textos de la pagina principal de peliculas populares //
 
 const options1 = {
   method: 'GET',
@@ -39,7 +39,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', opti
 })
 
 
-// cambiar los textos de la pagina principal de series populares//
+// Cambiar los textos de la pagina principal de series populares //
 
 const options2 = {
   method: 'GET',
@@ -74,7 +74,7 @@ fetch('https://api.themoviedb.org/3/tv/popular?language=en-US&page=1', options2)
 })
 
 
-// cambiar los textos de la pagina principal de lo nuevo de peliculas//
+// Cambiar los textos de la pagina principal de lo nuevo de peliculas //
 const options3 = {
   method: 'GET',
   headers: {
