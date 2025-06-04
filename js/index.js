@@ -3,8 +3,12 @@
 let movies = document.querySelector('.movies');
 let series = document.querySelector('.series');
 let newsmo = document.querySelector('.news');
+console.log(movies)
+console.log(series)
+console.log(newsmo)
 
 // Cambiar los textos de la pagina principal de peliculas populares //
+
 
 const options1 = {
   method: 'GET',
@@ -26,11 +30,11 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', opti
   for (let i = 0; i <5 ; i++) {
 
     movies.innerHTML +=
-    `<article class="movis">
-        <a href="./detail-movie.html?id=${info[i].id}"><img src= "https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="${info[i].title}" class="img">
-        <h3 class="titulos">${info[i].title}</h3>
-        <p class="fecha">(${info[i].release_date})</p></a>
-    </article>`
+      `<article class="movis">
+          <a href="./detailmovie.html?id=${info[i].id}"><img src= "https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="${info[i].title}" class="img">
+          <h3 class="titulos">${info[i].title}</h3>
+          <p class="fecha">(${info[i].release_date})</p></a>
+      </article>`
   }
   })
 
