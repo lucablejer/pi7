@@ -1,30 +1,28 @@
-// Redireccion a peliculas que seleccione el usuario //  
+// atrapar selectores// 
 
-let mainjs = document.querySelector('.main-js')
+let queryString = location.search;
+console.log(queryString);
+let queryStringobj = new URLSearchParams(queryString);
+let id = queryStringobj.get('id');
+let section = document.querySelector(".detalles");
+console.log(id)
 
-const options1 = {
-  method: 'GET',
-  headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YWY5ZTY4ZjAwZDk2YjMwNmNjMGFiMmU1MmNlYWY5YyIsIm5iZiI6MTc0ODQzNjE2My41NjE5OTk4LCJzdWIiOiI2ODM3MDRjM2U4YmJkN2MwZDZlYjQwYTAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.549fvUnBzos7VJDClsuRSkuZ_HeiJEQuucUegBVJJTk'
-  }
-};
+fetch ('https://api.themoviedb.org/3/movie/top_rated?api_key=b04e301645ef571f2efbccb360411716/${id}')
 
-fetch(`https://api.themoviedb.org/3/movie/5678?language=es-ES`,options1)
-.then (function (response) {
-    return response.json(); 
-  })
-.then (function (data) {
-  console.log(data);
+.then(function(response) {
+  return response.json()
+})
 
-    mainjs.innerHTML +=
-      `<h1 class="h1-Cars-Detail">${data.title}</h1>
+.then(function(data) {
+  let info = data.response;
+    section.innerHTML = `
+
+    <h1 class="h1-Cars-Detail">${data.title}</h1>
         <ul>
             <li class="li-Cars-Detail">${data.release_date}</li>
             <li class="li-Cars-Detail">${data.runtime}</li>
             <li class="li-Cars-Detail">${data.genres}</li>
         </ul>
-
 <section class="Cars-Section">
 <div>
     <img class="Cars-Photo" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt="${data.title}">
@@ -38,3 +36,22 @@ fetch(`https://api.themoviedb.org/3/movie/5678?language=es-ES`,options1)
   .catch(function(error) {
   console.log("Error: " + error);
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
