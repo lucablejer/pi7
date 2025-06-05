@@ -27,11 +27,10 @@ fetch(`https://api.themoviedb.org/3/movie/5678?language=es-ES`,options1)
 
 <section class="Cars-Section">
 <div>
-    <img class="Cars-Photo" src="" alt="">
+    <img class="Cars-Photo" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt="${data.title}">
 </div>
 <div>
     <p class="Cars-Text-Detail">${data.vote_average} <br> <br> ${data.overview}</p>
-    <iframe width="560" height="298" src="https://www.youtube.com/embed/oFTfAdauCOo?si=PxU9k-R8tyAIFDOZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 </section>`
   })
