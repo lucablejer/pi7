@@ -1,4 +1,4 @@
-// atrapar selectores// 
+// Atrapar selectores// 
 
 let queryString = location.search;
 console.log(queryString);
