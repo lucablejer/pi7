@@ -1,4 +1,4 @@
-// atrapar selectores// 
+// Atrapar selectores// 
 
 let queryString = location.search;
 let queryStringobj = new URLSearchParams(queryString);
