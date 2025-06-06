@@ -7,9 +7,7 @@ console.log(movies)
 console.log(series)
 console.log(newsmo)
 
-// Cambiar los textos de la pagina principal de peliculas populares //
-
-// cambiar los textos de top rated movies  
+// Cambiar los textos de top rated movies  
 
 const options1 = {
   method: 'GET',
@@ -45,7 +43,7 @@ fetch ('https://api.themoviedb.org/3/movie/top_rated?api_key=b04e301645ef571f2ef
 })
 
 
-// cambiar los textos de popular series //
+// Cambiar los textos de popular series //
 
 const options2 = {
   method: 'GET',
@@ -80,7 +78,7 @@ fetch('https://api.themoviedb.org/3/tv/popular?language=en-US&page=1', options2)
 })
 
 
-// cambiar los textos de la pagina principal upcoming movies//
+// Cambiar los textos de la pagina principal upcoming movies//
 const options3 = {
   method: 'GET',
   headers: {
