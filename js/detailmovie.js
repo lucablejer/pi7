@@ -22,7 +22,7 @@ fetch (url)
 
   for (let i=0; i < data.genres.length; i++){
 
-    generos += `<a class="li-Cars-Detail" href= "detailmovie.html?id=${data.genres[i].id}&nombre=${data.genres[i].name}&tipo=pelicula"> ${data.genres[i].name}</a>`
+    generos += `<a class="li-Cars-Detail" href= "detailsgenre.html?id=${data.genres[i].id}&nombre=${data.genres[i].name}&tipo=pelicula"> ${data.genres[i].name}</a>`
     }
 
     section.innerHTML = `
