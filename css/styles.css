@@ -168,12 +168,51 @@ color:  rgba(177, 0, 0, 1);
 /* Result */
 
 .section-containerg{
-margin-bottom: 50px;
-margin-top: 40px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
 }
 
-.hidden{
-    display: none;
+.section-containerg a {
+    color: black;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.section-containerg img{
+     width: 200px;
+     height:300px;
+     border-radius:20px;
+     padding: 10px;
+}
+
+.found {
+  display: flex;
+  flex-wrap: wrap;         
+  justify-content: space-around;            
+  padding: 10px;
+  margin: 5px;
+}
+
+.articulo{
+    width: 200px;
+    height:400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+
+.titulo{
+     width: 200px;
+    height:400px;
+    font-size: 10px;
 }
 
 /* Serie Genre */
@@ -205,42 +244,40 @@ text-decoration: none;
 
 /* Detail Movie & Detail Serie */
 
-.Cars-Section{
-display: flex;
-padding-top: 30px;
-padding-left: 200px;
-padding-bottom: 50px;
+
+.detalles{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 15px;
+  gap: 15px;
+}
+  
+.image-movie{
+    width:300px;
+    height: 450px;
+    border-radius: 10px ;
 }
 
-.Cars-Photo{
-padding-right: 20px;
-height: 410px;
-width: 300px;
+.overview{
+    width: 80%;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
 }
 
-.Cars-Text-Detail{
-font-family: 'Courier New', Courier, monospace;
-font-weight: bolder;
-color: black;
-padding-bottom: 20px;
-border: solid 1px black;
+.detail-title{
+    font-size: 30px;
+     font-family: 'Courier New', Courier, monospace;
 }
 
-.h1-Cars-Detail{
-font-family: 'Courier New', Courier, monospace;
-color: black;
-padding-left: 200px;
-}
 
 .li-Cars-Detail{
-font-family: 'Courier New', Courier, monospace;
-color: black;
-}
-
-.BreakingBad-Photo{
-padding-right: 20px;
-height: 450px;
-width: 350px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+    text-align: none;
 }
 
 /* Detail Genre */ 

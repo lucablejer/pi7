@@ -5,9 +5,10 @@ let queryStringobj = new URLSearchParams(queryString);
 let id = queryStringobj.get('id');
 let section = document.querySelector(".detalles");
 console.log(id)
-let url = `https://api.themoviedb.org/3/movie/${id}?api_key=b04e301645ef571f2efbccb360411716`
+let url = ` https://api.themoviedb.org/3/search/tv/${id}?api_key=b04e301645ef571f2efbccb360411716 `
 
-// a donde  te lleva al clickear x movie//
+
+// a donde  te lleva al clickear x serie//
 
 fetch (url)
 
@@ -22,12 +23,12 @@ fetch (url)
 
   for (let i=0; i < data.genres.length; i++){
 
-    generos += `<a class="li-Cars-Detail" href= "detailmovie.html?id=${data.genres[i].id}&nombre=${data.genres[i].name}&tipo=pelicula"> ${data.genres[i].name}</a>`
+    generos += `<a class="li-Cars-Detail" href= "detailserie.html?id=${data.genres[i].id}&nombre=${data.genres[i].name}&tipo=serie"> ${data.genres[i].name}</a>`
     }
 
     section.innerHTML = `
    
-    <img class="image-movie" src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="Movie Poster">
+    <img class="image-movie" src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="Serie Poster">
     
     <article class="detail-section"> 
           
@@ -46,22 +47,3 @@ fetch (url)
   .catch(function(error) {
    console.log("Error: " + error);
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,72 +1,96 @@
 let queryString = location.search;
-let queryStringObj = new URLSearchParams(queryString);
-let id = queryStringObj.get("id");
-let nombre = queryStringObj.get("nombre")
-let tipo = queryStringObj.get("tipo")
-let titulo = document.querySelector(".tituloterror")
-let section = document.querySelector(".terror")
+let queryObj = new URLSearchParams(queryString);
+let buscar = queryObj.get("nav");
+let series = queryObj.get("types");
+let peliculas = queryObj.get("typem");
+let oculto = document.querySelector(".hidden");
+let encontrado = document.querySelector(".found");
+let texto = document.querySelector(".h2-ds")
 
-titulo.innerHTML = ${tipo} de ${nombre}
-if (tipo == "pelicula") {
-    let url = 'https://api.themoviedb.org/3/discover/movie?api_key=b04e301645ef571f2efbccb360411716&with_genres=${id}'
+console.log(buscar);
 
-    fetch(url)
-        .then(function (response) {
+
+if (peliculas) {
+    
+    let urlif= `https://api.themoviedb.org/3/search/movie?api_key=b04e301645ef571f2efbccb360411716&query=${buscar}`;
+
+    fetch(urlif)
+
+    .then(function (response) {
             return response.json();
         })
-        .then(function (data) {
-            console.log(data);
 
-            for (let i = 0; i < data.results.length; i++) {
-                section.innerHTML += `
-            <article class="peli1">     
-            <img class="laballena" src= "https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt="Movie Poster">  
-                <h3>${data.results[i].title}</h3>
-                <p> Fecha de estreno: ${data.results[i].release_date}</p>
-                <nav> 
-                  <ul> 
-                      <li class="ver"> <a href="./detallepelicula.html?id=${data.results[i].id}"> VER MAS </a></li>
-                  </ul>
-                </nav>
-            </article>
-              `
+    .then(function (data) {
+            let info = data.results;
+            let allCharacters = "";
+
+     if (info.length === 0) {
+                oculto.style.display = "block";
+                encontrado.style.display = "none";
+            } 
+
+     else {
+           texto.innerText = 
+           
+           `Movies found for: ${buscar}`;
+                for (let i = 0; i < info.length; i++) {
+                    const element = info[i];
+                    allCharacters += 
+                    `<article class="article">
+                        <a href="detailmovie.html?id=${element.id}">
+                            <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" alt="${element.title}" class="img">
+                            <h3 class="titulos">${element.title}</h3>
+                            <p class="fecha">(${element.release_date})</p>
+                        </a>
+                    </article>`;
+                }
+
+                encontrado.innerHTML = allCharacters;
+                oculto.style.display = "none";
+                encontrado.style.display = "flex";
             }
-
-
         })
         .catch(function (error) {
-            console.log("el error es:" + error);
+            console.log("Error: " + error);
         });
 
-} else {
-    let url = 'https://api.themoviedb.org/3/discover/tv?api_key=b04e301645ef571f2efbccb360411716&with_genres=${id}'
-
-    fetch(url)
+} else if (series) {
+    let urls = `https://api.themoviedb.org/3/search/tv?api_key=b04e301645ef571f2efbccb360411716&query=${buscar}`;
+        fetch(urls)
         .then(function (response) {
             return response.json();
         })
+
         .then(function (data) {
-            console.log(data);
+            let info = data.results;
+            let allCharacters = "";
 
-            for (let i = 0; i < data.results.length; i++) {
-                section.innerHTML += `
-        <article class="peli1">     
-        <img class="laballena" src= "https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt="Movie Poster">  
-            <h3>${data.results[i].name}</h3>
-            <p> Fecha de estreno: ${data.results[i].release_date}</p>
-            <nav> 
-              <ul> 
-                  <li class="ver"> <a href="./detalleserie.html?id=${data.results[i].id}"> VER MAS </a></li>
-              </ul>
-            </nav>
-        </article>
-          `
+            if (info.length === 0) {
+                oculto.style.display = "block";
+                encontrado.style.display = "none";
+
+            } else {
+                texto.innerText = 
+                
+                `Series found for: ${buscar}`;
+                for (let i = 0; i < info.length; i++) {
+                    const element = info[i];
+                    allCharacters += `
+                    <article class="articulo">
+                        <a href="detailserie.html?id=${element.id}">
+                            <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" alt="${element.name}" class="img">
+                            <h3 class="titulo">${element.name}</h3>
+                            <p class="fecha">(${element.first_air_date})</p>
+                        </a>
+                    </article>`;
+                }
+                encontrado.innerHTML = allCharacters;
+                oculto.style.display = "none";
+                encontrado.style.display = "flex";
             }
-
-
         })
 
-        .catch(function (error) {
-            console.log("el error es:" + error);
+  .catch(function (error) {
+        console.log("Error: " + error);
         });
 }
