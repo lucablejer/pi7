@@ -9,17 +9,6 @@ console.log(newsmo)
 
 // Cambiar los textos de la pagina principal de peliculas populares //
 
-// cambiar los textos de top rated movies  
-
-const options1 = {
-  method: 'GET',
-  headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YWY5ZTY4ZjAwZDk2YjMwNmNjMGFiMmU1MmNlYWY5YyIsIm5iZiI6MTc0ODQzNjE2My41NjE5OTk4LCJzdWIiOiI2ODM3MDRjM2U4YmJkN2MwZDZlYjQwYTAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.549fvUnBzos7VJDClsuRSkuZ_HeiJEQuucUegBVJJTk'
-  }
-};
-fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options1) // 
-
 fetch ('https://api.themoviedb.org/3/movie/top_rated?api_key=b04e301645ef571f2efbccb360411716')
 
 .then (function (response) {
@@ -47,18 +36,9 @@ fetch ('https://api.themoviedb.org/3/movie/top_rated?api_key=b04e301645ef571f2ef
 
 // cambiar los textos de popular series //
 
-const options2 = {
-  method: 'GET',
-  headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YWY5ZTY4ZjAwZDk2YjMwNmNjMGFiMmU1MmNlYWY5YyIsIm5iZiI6MTc0ODQzNjE2My41NjE5OTk4LCJzdWIiOiI2ODM3MDRjM2U4YmJkN2MwZDZlYjQwYTAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.549fvUnBzos7VJDClsuRSkuZ_HeiJEQuucUegBVJJTk'
-  }
-};
 
-//https://api.themoviedb.org/3/tv/popular/?api_key=b04e301645ef571f2efbccb360411716 //
-
-fetch('https://api.themoviedb.org/3/tv/popular?language=en-US&page=1', options2)
-
+fetch('https://api.themoviedb.org/3/tv/popular?api_key=b04e301645ef571f2efbccb360411716')
+  
 .then (function (response) {
     return response.json(); 
   })
@@ -70,7 +50,7 @@ fetch('https://api.themoviedb.org/3/tv/popular?language=en-US&page=1', options2)
     series.innerHTML +=
     ` 
     <article class="movis">
-        <a href="./detail-serie.html?id=${info[i].id}"><img src= "https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="${info[i].name}" class="img">
+        <a href="./detailserie.html?id=${info[i].id}"><img src= "https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="${info[i].name}" class="img">
         <h3 class="titulos">${info[i].name}</h3>
         <p class="fecha">(${info[i].first_air_date})</p></a>
     </article>`
@@ -83,15 +63,8 @@ fetch('https://api.themoviedb.org/3/tv/popular?language=en-US&page=1', options2)
 
 
 // cambiar los textos de la pagina principal upcoming movies//
-const options3 = {
-  method: 'GET',
-  headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YWY5ZTY4ZjAwZDk2YjMwNmNjMGFiMmU1MmNlYWY5YyIsIm5iZiI6MTc0ODQzNjE2My41NjE5OTk4LCJzdWIiOiI2ODM3MDRjM2U4YmJkN2MwZDZlYjQwYTAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.549fvUnBzos7VJDClsuRSkuZ_HeiJEQuucUegBVJJTk'
-  }
-};
 
-fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', options3)
+fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=b04e301645ef571f2efbccb360411716')
 
 .then(function (response) {
     return response.json(); 
@@ -103,7 +76,7 @@ fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', op
   for (let i = 0; i < 5 ; i++) {
     newsmo.innerHTML +=
     ` <article class="movis">
-        <a href="./detail-movie.html?id=${info[i].id}"><img src= "https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="${info[i].title}" class="img">
+        <a href="./detailmovie.html?id=${info[i].id}"><img src= "https://image.tmdb.org/t/p/w500/${info[i].poster_path}" alt="${info[i].title}" class="img">
         <h3 class="titulos">${info[i].title}</h3>
         <p class="fecha">(${info[i].release_date})</p></a>
     </article>`
