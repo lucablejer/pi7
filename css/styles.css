@@ -45,7 +45,8 @@ font-size: 20px;
 .footer{
 background-color: black;
 padding: 20px;
-color:  rgba(177, 0, 0, 1); 
+color:  rgba(177, 0, 0, 1);
+
 }
 
 ul{
@@ -204,32 +205,23 @@ color:  rgba(177, 0, 0, 1);
     font-size: 15px;
 }
 
-/* Serie Genre */
-
-.div-generos{
-padding-top: 40px;
-border-top: solid 1px rgba(177, 0, 0, 1);
-}  
+/* Serie Genre y movie */
 
 .generos{
-display: flex;
-justify-content: space-around;
-margin-bottom: 115px;
-margin-top: 40px;
-font-size: xx-large;
-font-family: 'Courier New', Courier, monospace;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  gap: 10px;
+  height: 80vh;
+}
+.generos a{
+  text-decoration: none;
+  color: black; 
+  font-size: 30px;
 }
 
-.generos1{
-font-weight: bolder;
-color: black;
-}
 
-.texto-generos{
-font-family: 'Courier New', Courier, monospace;
-font-size: xx-large;
-text-decoration: none;
-}    
 
 /* Detail Movie & Detail Serie */
 
