@@ -34,7 +34,7 @@ fetch ('https://api.themoviedb.org/3/movie/top_rated?api_key=b04e301645ef571f2ef
 })
 
 
-// cambiar los textos de popular series //
+// Cambiar los textos de popular series //
 
 
 fetch('https://api.themoviedb.org/3/tv/popular?api_key=b04e301645ef571f2efbccb360411716')
