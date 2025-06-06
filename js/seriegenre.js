@@ -16,7 +16,7 @@ fetch (url)
   
     for (let i=0; i < data.genres.length; i++){
         console.log('vuelta ', [i], generos);
-        generos += `<a class=".generos" href= "detailgenre.html?id=${data.genres[i].id}&nombre=${data.genres[i].name}&tipo=movie"> ${data.genres[i].name}</a>`
+        generos += `<a class=".generos" href= "detailsgenre.html?id=${data.genres[i].id}&nombre=${data.genres[i].name}&tipo=movie"> ${data.genres[i].name}</a>`
     }
     
     gen.innerHTML = generos
