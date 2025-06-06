@@ -5,7 +5,7 @@ let queryStringobj = new URLSearchParams(queryString);
 let id = queryStringobj.get('id');
 let section = document.querySelector(".detalles");
 console.log(id)
-let url = ` https://api.themoviedb.org/3/search/tv/${id}?api_key=b04e301645ef571f2efbccb360411716 `
+let url = `https://api.themoviedb.org/3/tv/${id}?api_key=b04e301645ef571f2efbccb360411716 `
 
 
 // a donde  te lleva al clickear x serie//
@@ -32,14 +32,14 @@ fetch (url)
     
     <article class="detail-section"> 
           
-          <h1 class= "detail-title">${data.title}</h1>
+          <h1 class= "detail-title">${data.name}</h1>
           <ul class="overview">
-            <li>${generos}</li>
+            <li class="title">${generos}</li>
             <li> Rating:${data.vote_average}</li>
-            <li> Release date: ${data.release_date}</li>
+            <li> Release date: ${data.first_air_date}</li>
         </ul>
         <p class="overview">${data.overview} </p>
-      </article>
+    </article>
    
     ` 
  })

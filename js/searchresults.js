@@ -6,9 +6,11 @@ let peliculas = queryObj.get("typem");
 let oculto = document.querySelector(".hidden");
 let encontrado = document.querySelector(".found");
 let texto = document.querySelector(".h2-ds")
+let load = document.querySelector(".loading");
 
 console.log(buscar);
 
+load.style.display = "block";
 
 if (peliculas) {
     
@@ -26,6 +28,7 @@ if (peliculas) {
 
      if (info.length === 0) {
                 oculto.style.display = "block";
+                load.style.display = "none";
                 encontrado.style.display = "none";
             } 
 
@@ -48,6 +51,7 @@ if (peliculas) {
                 encontrado.innerHTML = allCharacters;
                 oculto.style.display = "none";
                 encontrado.style.display = "flex";
+                load.style.display = "none";
             }
         })
         .catch(function (error) {
