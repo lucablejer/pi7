@@ -1,5 +1,4 @@
 // Atrapar los selectores //
-
 let queryString = location.search
 let queryObj = new URLSearchParams (queryString)
 let movie =  queryObj.get ('.typem')
@@ -16,7 +15,7 @@ fetch (url)
   
     for (let i=0; i < data.genres.length; i++){
         console.log('vuelta ', [i], generos);
-        generos += `<a class=".generos" href= "detailsgenre.html?id=${data.genres[i].id}&nombre=${data.genres[i].name}&tipo=movie"> ${data.genres[i].name}</a>`
+        generos += `<a class=".generos" href= "detailsgenre.html?id=${data.genres[i].id}> ${data.genres[i].genre}</a>`
     }
     
     gen.innerHTML = generos
