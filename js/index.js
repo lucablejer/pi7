@@ -16,7 +16,7 @@ const options1 = {
     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YWY5ZTY4ZjAwZDk2YjMwNmNjMGFiMmU1MmNlYWY5YyIsIm5iZiI6MTc0ODQzNjE2My41NjE5OTk4LCJzdWIiOiI2ODM3MDRjM2U4YmJkN2MwZDZlYjQwYTAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.549fvUnBzos7VJDClsuRSkuZ_HeiJEQuucUegBVJJTk'
   }
 };
-fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options1) // 
+//fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options1) // 
 
 fetch ('https://api.themoviedb.org/3/movie/top_rated?api_key=b04e301645ef571f2efbccb360411716')
 

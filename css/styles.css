@@ -282,29 +282,27 @@ text-decoration: none;
 
 /* Detail Genre */ 
 
-.moviemain{
-margin-bottom: 15px;
-margin-top: 10px;
-text-decoration: none;
-}
-
 .section-container-genre{
-padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5px;
 }
 
-.disneymovies-genre{
+.imggenre{
+  width: 250px;
+  padding: 10px;
+  border-radius: 20px;
+}
 
-display: flex;
-justify-content: space-around;
-align-items: center;
-flex-wrap: nowrap;
-padding: 20px;
+.titlegenre{
+    width: 150px;
+    font-size: 15px;
 }
 
 .a-genre{
-text-decoration: none;
-color: black;
-font-weight: bolder;
+  text-decoration: none;
+  color: black;
 }
 
 /* Media */
@@ -384,7 +382,4 @@ margin: 10px;
     width: 90%;
     height: auto;
   }
-
-
-
 }
